@@ -10,7 +10,7 @@ export function Error() {
         <img src={error} alt='error image' />
       </S.Container>
       <S.Content>
-        <h1>The rocket team has won this time</h1>
+        <h1>The rocket team has won this time!</h1>
         <Link to='/'>Return</Link>
       </S.Content>
     </>
