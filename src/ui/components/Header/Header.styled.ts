@@ -46,5 +46,12 @@ export const Content = styled.div`
     height: 300px;
     margin: 50px 0 0 0;
     animation: ${goBack} 1s infinite alternate;
+    transition: 1s;
+
+    @media (max-width: 471px) {
+      transition: 1s;
+      width: 200px;
+      height: 200px;
+    }
   }
 `
