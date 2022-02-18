@@ -1,27 +1,25 @@
 import { useEffect, useState } from 'react'
 
 import { Header } from 'ui/components/Header'
-import { Result } from 'types'
+import { Footer } from 'ui/components/Footer'
+import { Pokemon, Response } from 'types'
 
 import api from 'services/api'
 
 import * as S from './Home.styled'
+import { PokemonCard } from 'ui/components/PokemonCard'
 
 export function Home() {
-  const [pokemons, setPokemons] = useState<Result[]>([])
+  const [pokemons, setPokemons] = useState<Pokemon[]>([])
 
   useEffect(() => {
     api
-      .get<Result[]>('/pokemon')
+      .get<Response>('/pokemon')
       .then((response) => {
-        setPokemons(
-          response.data.map((pokemon) => ({
-            results: pokemon.results.slice(0, 150),
-          })),
-        )
+        setPokemons(response.data.results)
       })
       .catch((err) => {
-        console.error('deu erro ' + err)
+        console.error('Ops! deu erro :( ' + err)
       })
   }, [])
 
@@ -32,7 +30,15 @@ export function Home() {
       <Header />
       <S.Content>
         <h2>Pokémons</h2>
+        <ul>
+          {pokemons.map((pokemon) => (
+            <li key={pokemon.name}>
+              <PokemonCard url={pokemon.url} />
+            </li>
+          ))}
+        </ul>
       </S.Content>
+      <Footer />
     </>
   )
 }
