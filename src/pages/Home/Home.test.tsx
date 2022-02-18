@@ -5,6 +5,10 @@ describe('Home page', () => {
   it('Checks if the page header loads correctly', () => {
     render(<Home />)
 
-    expect(screen.getByText(/Who is that Pokémon?/)).toBeInTheDocument()
+    expect(
+      screen.getByText(
+        /The perfect guide for you to find your favorite Pokémon/,
+      ),
+    ).toBeInTheDocument()
   })
 })
