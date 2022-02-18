@@ -1,3 +1,6 @@
+<img width="1440" alt="Captura de Tela 2022-02-18 às 08 31 00" src="https://user-images.githubusercontent.com/71105672/154674830-d98727fb-d8dc-4906-8c4a-224fdfb7c0bc.png">
+
+
 ## What is inside?
 
 - [ReactJS](https://reactjs.org/)
