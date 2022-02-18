@@ -11,7 +11,6 @@ type Props = {
 type Pokemon = {
   id: number
   name: string
-  abilities: string
 }
 
 export function PokemonCard({ url }: Props) {
@@ -36,12 +35,16 @@ export function PokemonCard({ url }: Props) {
 
   return (
     <S.Container>
-      <img
-        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-        alt={pokemon.name}
-      />
-      <span>{pokemon.id}</span>
-      <h3>{pokemon.name}</h3>
+      <li>
+        <img
+          src={`
+          https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png
+        `}
+          alt={pokemon.name}
+        />
+        <span>{pokemon.id}</span>
+        <h3>{pokemon.name}</h3>
+      </li>
     </S.Container>
   )
 }
