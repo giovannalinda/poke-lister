@@ -23,20 +23,20 @@ export function Home() {
       })
   }, [])
 
-  console.log(pokemons)
-
   return (
     <>
       <Header />
       <S.Content>
         <h2>Pokémons</h2>
-        <ul>
-          {pokemons.map((pokemon) => (
-            <li key={pokemon.name}>
-              <PokemonCard url={pokemon.url} />
-            </li>
-          ))}
-        </ul>
+        <table>
+          <tr>
+            {pokemons.map((pokemon) => (
+              <td key={pokemon.name}>
+                <PokemonCard url={pokemon.url} />
+              </td>
+            ))}
+          </tr>
+        </table>
       </S.Content>
       <Footer />
     </>

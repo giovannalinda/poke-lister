@@ -2,7 +2,7 @@ import { theme } from 'config'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  li {
+  tr {
     background: ${theme.colors.white};
     margin: 10px;
     border-radius: 5px;
