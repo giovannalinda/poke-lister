@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
-
 import api from 'services/api'
-
-import * as S from './PokemonCard.styled'
 
 type Props = {
   url: string
@@ -16,7 +13,7 @@ type Pokemon = {
   }
 }
 
-export function PokemonCard({ url }: Props) {
+export function usePokemon({ url }: Props) {
   const [pokemon, setPokemon] = useState<Pokemon | undefined>()
 
   useEffect(() => {
@@ -30,17 +27,7 @@ export function PokemonCard({ url }: Props) {
       })
   }, [url])
 
-  if (!pokemon) {
-    return <strong>Loading...</strong>
+  return {
+    pokemon,
   }
-
-  return (
-    <S.Container>
-      <li>
-        <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-        <span>{pokemon.id}</span>
-        <h3>{pokemon.name}</h3>
-      </li>
-    </S.Container>
-  )
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Content = styled.div`
   h2 {
-    margin: 150px 0 0 50px;
+    margin: 60px 0 0 50px;
   }
 
   ul {
