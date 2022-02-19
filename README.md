@@ -1,4 +1,4 @@
-<img width="1440" alt="Captura de Tela 2022-02-18 às 08 31 00" src="https://user-images.githubusercontent.com/71105672/154674830-d98727fb-d8dc-4906-8c4a-224fdfb7c0bc.png">
+<img width="1432" alt="Captura de Tela 2022-02-18 às 23 25 13" src="https://user-images.githubusercontent.com/71105672/154782586-5f450e09-5e36-43cc-89ea-9327e853cb8d.png">
 
 
 ## What is inside?
