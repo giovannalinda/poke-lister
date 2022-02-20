@@ -9,7 +9,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src --ext ts,tsx",
     "prettier:check": "prettier -c",
-    "test:ci": "jest --passWithNoTests --ci --watchAll=false",
+    "test:ci": "react-scripts test --passWithNoTests --ci --watchAll=false",
     "lint:fix": "yarn lint --fix",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "prepare": "husky install"
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -64,6 +65,7 @@
     "jest": "27.4.7",
     "jest-styled-components": "7.0.8",
     "lint-staged": "12.3.3",
+    "material-table": "1.69.3",
     "nock": "13.2.4",
     "prettier": "2.4.0",
     "react-icons": "4.3.1",

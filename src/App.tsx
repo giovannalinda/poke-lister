@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Home } from 'pages'
+import { Home, Error } from 'pages'
 import { HOME } from 'routes'
 import { GlobalStyle } from 'ui'
 
@@ -9,6 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path={HOME} element={<Home />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <GlobalStyle />
     </BrowserRouter>
