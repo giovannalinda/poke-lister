@@ -44,7 +44,7 @@ export const Content = styled.div`
   img {
     width: 300px;
     height: 300px;
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
     animation: ${goBack} 1s infinite alternate;
     transition: 1s;
 
