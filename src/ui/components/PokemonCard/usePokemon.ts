@@ -27,8 +27,6 @@ export function usePokemon({ url }: Props) {
       })
   }, [url])
 
-  console.log(pokemon)
-
   return {
     pokemon,
   }
