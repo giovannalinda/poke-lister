@@ -11,6 +11,7 @@
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
+- [PokeAPI](https://pokeapi.co/docs/v2)
 
 ## Getting Started
 ### Install dependencies:
