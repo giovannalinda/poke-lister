@@ -31,6 +31,5 @@ export function usePokemon({ url }: Props) {
 
   return {
     pokemon,
-    url,
   }
 }
