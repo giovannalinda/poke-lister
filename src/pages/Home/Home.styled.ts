@@ -5,15 +5,12 @@ export const Content = styled.div`
     margin: 150px 0 0 50px;
   }
 
-  table {
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    margin: 70px 0 0 40px;
-    max-width: 120rem;
-
-    &::-webkit-scrollbar {
-      height: 0;
-    }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    grid-row-gap: 10px;
   }
 `

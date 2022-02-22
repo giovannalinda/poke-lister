@@ -15,13 +15,11 @@ export function PokemonCard({ url }: Props) {
 
   return (
     <S.Container>
-      <tr>
-        <td>
-          <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-          <span>{pokemon.id}</span>
-          <h3>{pokemon.name}</h3>
-        </td>
-      </tr>
+      <li>
+        <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+        <span>{pokemon.id}</span>
+        <h3>{pokemon.name}</h3>
+      </li>
     </S.Container>
   )
 }
