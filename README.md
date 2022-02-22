@@ -1,3 +1,6 @@
+<img width="1440" alt="Captura de Tela 2022-02-18 às 23 55 46" src="https://user-images.githubusercontent.com/71105672/154783425-806526ca-d96f-44d1-b23d-7a6c57fe0353.png">
+
+
 ## What is inside?
 
 - [ReactJS](https://reactjs.org/)
@@ -8,6 +11,7 @@
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
+- [PokeAPI](https://pokeapi.co/docs/v2)
 
 ## Getting Started
 ### Install dependencies:
