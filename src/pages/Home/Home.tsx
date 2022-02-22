@@ -28,15 +28,13 @@ export function Home() {
       <Header />
       <S.Content>
         <h2>Pokémons</h2>
-        <table>
-          <tr>
-            {pokemons.map((pokemon) => (
-              <td key={pokemon.name}>
-                <PokemonCard url={pokemon.url} />
-              </td>
-            ))}
-          </tr>
-        </table>
+        <ul>
+          {pokemons.map((pokemon) => (
+            <li key={pokemon.name}>
+              <PokemonCard url={pokemon.url} />
+            </li>
+          ))}
+        </ul>
       </S.Content>
       <Footer />
     </>

@@ -2,11 +2,11 @@ import { theme } from 'config'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  tr {
+  li {
     background: ${theme.colors.white};
-    margin: 10px;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px 0 0 10px;
 
     &:active {
       transform: translateY(-3px) scale(0.98);
@@ -14,8 +14,8 @@ export const Container = styled.div`
   }
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     transition: 300ms;
 
     :hover {
@@ -26,10 +26,5 @@ export const Container = styled.div`
   h3 {
     text-align: center;
     padding: 20px;
-  }
-
-  span {
-    margin: 0 0 0 10px;
-    color: ${theme.colors.red[700]};
   }
 `
