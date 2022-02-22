@@ -17,7 +17,6 @@ export const Container = styled.div`
     width: 130px;
     height: 130px;
     transition: 300ms;
-    display: flex;
 
     :hover {
       transform: translateY(-10px);
@@ -27,10 +26,5 @@ export const Container = styled.div`
   h3 {
     text-align: center;
     padding: 20px;
-  }
-
-  span {
-    margin: 0 0 0 10px;
-    color: ${theme.colors.red[700]};
   }
 `
